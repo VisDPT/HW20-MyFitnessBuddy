@@ -23,8 +23,8 @@ Route::auth();
      return view('home');
  });
 
-Route::post('/addMeal', function () {
-    return view('add meal');
+Route::get('/addMeal', function () {
+    return view('addMeal');
 });
 
 Route::get('/allMeals', function () {

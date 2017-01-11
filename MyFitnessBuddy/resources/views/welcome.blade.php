@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
                     Your Application's Landing Page.
-                    <img src ="/eatRight.jpeg">
+                    <img src ="/eatRight.jpg">
                 </div>
             </div>
         </div>
