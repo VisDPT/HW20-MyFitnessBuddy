@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::auth();
+
+//Route::get('/home', 'HomeController@index');
+
+ Route::get('/home', function () {
+     return view('home');
+ });
+
+Route::post('/addMeal', function () {
+    return view('add meal');
+});
+
+Route::get('/allMeals', function () {
+    return view('all Meals');
+});
