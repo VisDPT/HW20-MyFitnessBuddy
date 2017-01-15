@@ -19,14 +19,15 @@ Route::auth();
 
 //Route::get('/home', 'HomeController@index');
 
- Route::get('/home', function () {
+Route::get('/home', function () {
      return view('home');
  });
 
-Route::get('/addMeal', function () {
-    return view('addMeal');
-});
+Route::resource('addMeal', 'MealsController');
 
-Route::get('/allMeals', function () {
+Route::post('add', 'MealsController@create');
+
+Route::get('/allMeal', function () {
     return view('all Meals');
 });
+

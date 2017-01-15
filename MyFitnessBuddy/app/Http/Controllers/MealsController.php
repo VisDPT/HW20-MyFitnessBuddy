@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class UsersController extends Controller
+use App\Meal;
+
+class MealsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +17,9 @@ class UsersController extends Controller
      */
     public function index()
     {
- 
-        //
+       
+        return view('addMeal');
+        
     }
 
     /**
@@ -24,9 +27,16 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create ()
     {
+        // return User::create([
+        //     'mealName' => $data['mealName'],
+            
+        // ]);   
         //
+
+         //Meal::create()
+         
     }
 
     /**
@@ -38,6 +48,10 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         //
+           
+        $mealName = $request -> Input('mealName');
+  
+       
     }
 
     /**

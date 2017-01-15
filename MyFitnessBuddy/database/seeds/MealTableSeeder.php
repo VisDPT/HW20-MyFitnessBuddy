@@ -12,5 +12,6 @@ class MealTableSeeder extends Seeder
     public function run()
     {
         //
+        factory(Meal::class, 15)->create();
     }
 }
